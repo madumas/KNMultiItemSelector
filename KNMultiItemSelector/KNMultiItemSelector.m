@@ -54,7 +54,7 @@
     items = [_items mutableCopy];
     if (_preselectedItems) {
       selectedItems = _preselectedItems;
-      for (KNSelectorItem * i in self.selectedItems) {
+      for (KNSelectorItem * i in _preselectedItems) {
         if ([items containsObject:i]) {
           i.selected = YES;
         }
